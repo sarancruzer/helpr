@@ -1,0 +1,75 @@
+
+<ion-content padding>
+
+<ion-grid>
+  <ion-row *ngFor="let row of grid">
+    <ion-col width-50 >
+	      <img [src]="file_uri">
+	       <ion-icon ios="logo-apple" md="logo-apple" class="ion-icon"></ion-icon>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+ <ion-icon ios="logo-apple" md="logo-apple"></ion-icon>
+
+<div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+  <main class="mdl-layout__content">
+    <div class="mdl-card mdl-shadow--6dp">
+     
+      <div class="mdl-card__supporting-text">
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="username" />
+            <label class="mdl-textfield__label" for="username">Username</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="password" id="userpass" />
+            <label class="mdl-textfield__label" for="userpass">Password</label>
+          </div>
+        </form>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+      </div>
+    </div>
+  </main>
+</div> 
+
+
+
+</ion-content>
+
+<style type="text/css">
+  
+.mdl-card {
+  width: 100%
+}
+.mdl-button {
+  background: #3f51b5;
+  color:white;
+  width: 100%;
+  height: 60px;
+}
+.mdl-textfield {
+  width: 100%
+}
+.mdl-card__supporting-text{"
+	margin-top:25%;
+} 
+.mdl-shadow--6dp{
+	height: 550px;
+}
+.mdl-card__supporting-text{
+	margin-top: 100px;
+}
+.mdl-card__supporting-text{
+	width: 100%;
+}
+
+.ion-icon{
+	margin-left: 150px;
+	font-size: 100px;
+}
+
+</style>
